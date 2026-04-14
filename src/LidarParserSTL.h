@@ -19,7 +19,6 @@ enum class LidarAngleUnit {
   RAD = 1,                //!< 0..2*PI radian clockwise
   DEG_ROS = 2,            //!< +left, -right in degree (default)
   RAD_ROS = 3,            //!< +left, -right in radian
-  RADIIAN_ROS = RAD_ROS,  //!< backward compatible typo alias
 };
 
 /**
