@@ -12,16 +12,13 @@ This library parses STL-19P scan packets from an Arduino `Stream`, validates the
 
 ### Notes
 
-- The parser expects STL-19P frames beginning with `0x54 0x2C`.
-- Each packet contains 12 sample points.
-- `readData()` returns `true` only when a full valid packet has been received and decoded.
-- If no callback is registered, decoded points are printed to `Serial` by default.
+- If no result callback is registered, decoded points are printed to `Serial` by default.
 - The baud rate must be set to 230400 bit 1 stop bit
 - This library can also be used with and w/o Arduino Emulator on the desktop: e.g Linux
 
 ### Supported Lidars
 
-The following variants should be supported by this library:
+The following variants should be working with this library:
 - LD19
 - STL-19P
 - LD06
