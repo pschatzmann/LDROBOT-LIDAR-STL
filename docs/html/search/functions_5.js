@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['setangleunit_0',['setAngleUnit',['../classLidarParserSTL.html#a8eb96b93fd0adc2df3b22a0c1f0977d4',1,'LidarParserSTL']]],
-  ['setdistanceunit_1',['setDistanceUnit',['../classLidarParserSTL.html#af2c5dc8c3ca9fb84b9bb503e4631232e',1,'LidarParserSTL']]],
-  ['setmaxrange_2',['setMaxRange',['../classLidarParserSTL.html#afa3d4fb34f421f8c3f87720c5040040c',1,'LidarParserSTL']]],
-  ['setoutputwhennocallback_3',['setOutputWhenNoCallback',['../classLidarParserSTL.html#a0d70f972efbb48f8e2c2741e681a7ff5',1,'LidarParserSTL']]],
-  ['setreadbytecallback_4',['setReadByteCallback',['../classLidarParserSTL.html#aa0af1880a2a9f21ebacaee777a900397',1,'LidarParserSTL']]],
-  ['setresultcallback_5',['setResultCallback',['../classLidarParserSTL.html#a08654efc3eddc9f167d20fea6128bafa',1,'LidarParserSTL']]]
+  ['level_0',['level',['../classLidarLoggerClass.html#a74eae29b3c1bd5bd6a959438296df978',1,'LidarLoggerClass']]],
+  ['lidarparserstl_1',['lidarparserstl',['../classLidarParserSTL.html#a0903fd95ec05868d508fffb3ba29f4df',1,'LidarParserSTL::LidarParserSTL()=default'],['../classLidarParserSTL.html#a3dcdc5beeb3a6d728031ab6f225b67a6',1,'LidarParserSTL::LidarParserSTL(void(*callback)(const LidarResultData &amp;, void *), void *ref=nullptr)']]],
+  ['lidarresultdata_2',['lidarresultdata',['../structLidarResultData.html#a89ff0322967e6b9cb2e57e9b32a2b46b',1,'LidarResultData::LidarResultData(float angle, float distance, uint8_t intensity, uint64_t stamp=0, bool obstacle=true)'],['../structLidarResultData.html#a4f0e425807810cfa42628763a3c71805',1,'LidarResultData::LidarResultData()']]],
+  ['log_3',['log',['../classLidarLoggerClass.html#a5793867f4933c83ac32792c4b398f7aa',1,'LidarLoggerClass']]]
 ];

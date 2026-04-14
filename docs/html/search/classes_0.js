@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['lidarparserstl_0',['LidarParserSTL',['../classLidarParserSTL.html',1,'']]],
-  ['lidarresultdata_1',['LidarResultData',['../structLidarResultData.html',1,'']]]
+  ['lidarloggerclass_0',['LidarLoggerClass',['../classLidarLoggerClass.html',1,'']]],
+  ['lidarparserstl_1',['LidarParserSTL',['../classLidarParserSTL.html',1,'']]],
+  ['lidarresultdata_2',['LidarResultData',['../structLidarResultData.html',1,'']]]
 ];

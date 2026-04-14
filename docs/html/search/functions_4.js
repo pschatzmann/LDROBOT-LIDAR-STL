@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['readdata_0',['readData',['../classLidarParserSTL.html#abb2261ca9ee7a65a6304545f402afd33',1,'LidarParserSTL']]]
+  ['info_0',['info',['../classLidarLoggerClass.html#a4b1c81878ad429b2c1a815bd411213a6',1,'LidarLoggerClass']]]
 ];

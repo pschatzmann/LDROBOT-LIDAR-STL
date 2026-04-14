@@ -84,6 +84,16 @@ $(function() {
  <a href="classLidarParserSTL.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="LidarParserSTL_8h_source.html">LidarParserSTL.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for LidarParserSTL:</div>
+<div class="dyncontent">
+<div class="center"><img src="classLidarParserSTL__coll__graph.png" border="0" usemap="#aLidarParserSTL_coll__map" alt="Collaboration graph"/></div>
+<map name="aLidarParserSTL_coll__map" id="aLidarParserSTL_coll__map">
+<area shape="rect" title="LDRobot LiDAR STL&#45;19P packet parser for Arduino streams." alt="" coords="13,93,131,119"/>
+<area shape="rect" href="classLidarLoggerClass.html" title="Lightweight logger with vararg APIs for multiple log levels." alt="" coords="5,5,139,31"/>
+<area shape="poly" title=" " alt="" coords="75,45,75,93,69,93,69,45"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -125,27 +135,32 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ae978c03520800015c0a123d23f52f2b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get packet timestamp from the most recently parsed packet.  <br /></td></tr>
 <tr class="separator:ae978c03520800015c0a123d23f52f2b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6561e5044bf604cb89448713abe0f026" id="r_a6561e5044bf604cb89448713abe0f026"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLidarParserSTL.html#a6561e5044bf604cb89448713abe0f026">begin</a> ()</td></tr>
-<tr class="memdesc:a6561e5044bf604cb89448713abe0f026"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start the parser. Must be called before <code>readData()</code>.  <br /></td></tr>
+<tr class="memdesc:a6561e5044bf604cb89448713abe0f026"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start the parser. Must be called before <code><a class="el" href="classLidarParserSTL.html#ac94ce2eca52632e00033595e9e8e181e" title="Read and parse one packet using the read byte callback.">readData()</a></code>.  <br /></td></tr>
 <tr class="separator:a6561e5044bf604cb89448713abe0f026"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44ae43020f5d411b3f336c29f198627d" id="r_a44ae43020f5d411b3f336c29f198627d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLidarParserSTL.html#a44ae43020f5d411b3f336c29f198627d">end</a> ()</td></tr>
-<tr class="memdesc:a44ae43020f5d411b3f336c29f198627d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop the parser. After calling this, <code>readData()</code> will return false until <code><a class="el" href="classLidarParserSTL.html#a6561e5044bf604cb89448713abe0f026" title="Start the parser. Must be called before readData().">begin()</a></code> is called again. This can be used to temporarily disable parsing without losing the registered callback or configuration.  <br /></td></tr>
+<tr class="memdesc:a44ae43020f5d411b3f336c29f198627d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop the parser. After calling this, <code><a class="el" href="classLidarParserSTL.html#ac94ce2eca52632e00033595e9e8e181e" title="Read and parse one packet using the read byte callback.">readData()</a></code> will return false until <code><a class="el" href="classLidarParserSTL.html#a6561e5044bf604cb89448713abe0f026" title="Start the parser. Must be called before readData().">begin()</a></code> is called again. This can be used to temporarily disable parsing without losing the registered callback or configuration.  <br /></td></tr>
 <tr class="separator:a44ae43020f5d411b3f336c29f198627d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0af1880a2a9f21ebacaee777a900397" id="r_aa0af1880a2a9f21ebacaee777a900397"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLidarParserSTL.html#aa0af1880a2a9f21ebacaee777a900397">setReadByteCallback</a> (ReadByteCallback callback, void *ref=nullptr)</td></tr>
-<tr class="memdesc:aa0af1880a2a9f21ebacaee777a900397"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a custom byte-read callback used by <code>readData()</code>.  <br /></td></tr>
+<tr class="memdesc:aa0af1880a2a9f21ebacaee777a900397"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a custom byte-read callback used by <code><a class="el" href="classLidarParserSTL.html#ac94ce2eca52632e00033595e9e8e181e" title="Read and parse one packet using the read byte callback.">readData()</a></code>.  <br /></td></tr>
 <tr class="separator:aa0af1880a2a9f21ebacaee777a900397"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8a59e977acc4b0e546fa6f2fd1418f0" id="r_ad8a59e977acc4b0e546fa6f2fd1418f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLidarParserSTL.html#ad8a59e977acc4b0e546fa6f2fd1418f0">setLogLevel</a> (LidarLogLevel level)</td></tr>
+<tr class="memdesc:ad8a59e977acc4b0e546fa6f2fd1418f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set parser logger level.  <br /></td></tr>
+<tr class="separator:ad8a59e977acc4b0e546fa6f2fd1418f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca39f5070b19336630a33261b889f098" id="r_aca39f5070b19336630a33261b889f098"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLidarParserSTL.html#aca39f5070b19336630a33261b889f098">setLogOutput</a> (Print &amp;output)</td></tr>
+<tr class="memdesc:aca39f5070b19336630a33261b889f098"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Arduino print sink for parser log messages.  <br /></td></tr>
+<tr class="separator:aca39f5070b19336630a33261b889f098"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb2261ca9ee7a65a6304545f402afd33" id="r_abb2261ca9ee7a65a6304545f402afd33"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLidarParserSTL.html#abb2261ca9ee7a65a6304545f402afd33">readData</a> (Stream &amp;input_stream)</td></tr>
 <tr class="memdesc:abb2261ca9ee7a65a6304545f402afd33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read and parse one packet from the input stream.  <br /></td></tr>
 <tr class="separator:abb2261ca9ee7a65a6304545f402afd33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac94ce2eca52632e00033595e9e8e181e" id="r_ac94ce2eca52632e00033595e9e8e181e"><td class="memItemLeft" align="right" valign="top"><a id="ac94ce2eca52632e00033595e9e8e181e" name="ac94ce2eca52632e00033595e9e8e181e"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>readData</b> ()</td></tr>
+<tr class="memitem:ac94ce2eca52632e00033595e9e8e181e" id="r_ac94ce2eca52632e00033595e9e8e181e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLidarParserSTL.html#ac94ce2eca52632e00033595e9e8e181e">readData</a> ()</td></tr>
+<tr class="memdesc:ac94ce2eca52632e00033595e9e8e181e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read and parse one packet using the read byte callback.  <br /></td></tr>
 <tr class="separator:ac94ce2eca52632e00033595e9e8e181e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d70f972efbb48f8e2c2741e681a7ff5" id="r_a0d70f972efbb48f8e2c2741e681a7ff5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLidarParserSTL.html#a0d70f972efbb48f8e2c2741e681a7ff5">setOutputWhenNoCallback</a> (Print &amp;output)</td></tr>
-<tr class="separator:a0d70f972efbb48f8e2c2741e681a7ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a58dec88a62c08ca3a51d56719670d314" id="r_a58dec88a62c08ca3a51d56719670d314"><td class="memItemLeft" align="right" valign="top"><a id="a58dec88a62c08ca3a51d56719670d314" name="a58dec88a62c08ca3a51d56719670d314"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>parsePacket</b> (const uint8_t *packet, size_t len)</td></tr>
+<tr class="memdesc:a58dec88a62c08ca3a51d56719670d314"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse one full packet frame and emit points via callback. <br /></td></tr>
 <tr class="separator:a58dec88a62c08ca3a51d56719670d314"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24ff054439b66f3cb473c70c725b078e" id="r_a24ff054439b66f3cb473c70c725b078e"><td class="memItemLeft" align="right" valign="top"><a id="a24ff054439b66f3cb473c70c725b078e" name="a24ff054439b66f3cb473c70c725b078e"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>convertAngle</b> (float angle_deg) const</td></tr>
@@ -201,18 +216,15 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>max_range_m_</b> = 1
 <tr class="memitem:a1e8f08ad1fc943a104d05749503eb8de" id="r_a1e8f08ad1fc943a104d05749503eb8de"><td class="memItemLeft" align="right" valign="top"><a id="a1e8f08ad1fc943a104d05749503eb8de" name="a1e8f08ad1fc943a104d05749503eb8de"></a>
 uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>out_timestamp_</b> = 0</td></tr>
 <tr class="separator:a1e8f08ad1fc943a104d05749503eb8de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08ff4e27da39b63edb1b88c315060db6" id="r_a08ff4e27da39b63edb1b88c315060db6"><td class="memItemLeft" align="right" valign="top"><a id="a08ff4e27da39b63edb1b88c315060db6" name="a08ff4e27da39b63edb1b88c315060db6"></a>
-Print *&#160;</td><td class="memItemRight" valign="bottom"><b>p_no_cb_output</b> = &amp;Serial</td></tr>
-<tr class="separator:a08ff4e27da39b63edb1b88c315060db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a804ab9f2cecc6719644673d72f0a9e38" id="r_a804ab9f2cecc6719644673d72f0a9e38"><td class="memItemLeft" align="right" valign="top"><a id="a804ab9f2cecc6719644673d72f0a9e38" name="a804ab9f2cecc6719644673d72f0a9e38"></a>
-Stream *&#160;</td><td class="memItemRight" valign="bottom"><b>p_stream</b> = nullptr</td></tr>
-<tr class="separator:a804ab9f2cecc6719644673d72f0a9e38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17bcfedbd4ab1b6cc5397385fd8f5241" id="r_a17bcfedbd4ab1b6cc5397385fd8f5241"><td class="memItemLeft" align="right" valign="top"><a id="a17bcfedbd4ab1b6cc5397385fd8f5241" name="a17bcfedbd4ab1b6cc5397385fd8f5241"></a>
 ReadByteCallback&#160;</td><td class="memItemRight" valign="bottom"><b>read_byte_func</b> = nullptr</td></tr>
 <tr class="separator:a17bcfedbd4ab1b6cc5397385fd8f5241"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c57ea6d93af2052b92a05bc469a31d5" id="r_a3c57ea6d93af2052b92a05bc469a31d5"><td class="memItemLeft" align="right" valign="top"><a id="a3c57ea6d93af2052b92a05bc469a31d5" name="a3c57ea6d93af2052b92a05bc469a31d5"></a>
 void *&#160;</td><td class="memItemRight" valign="bottom"><b>read_byte_ref</b> = nullptr</td></tr>
 <tr class="separator:a3c57ea6d93af2052b92a05bc469a31d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4542ae0834e6c5a77047565d06232fc4" id="r_a4542ae0834e6c5a77047565d06232fc4"><td class="memItemLeft" align="right" valign="top"><a id="a4542ae0834e6c5a77047565d06232fc4" name="a4542ae0834e6c5a77047565d06232fc4"></a>
+<a class="el" href="classLidarLoggerClass.html">LidarLoggerClass</a>&#160;</td><td class="memItemRight" valign="bottom"><b>logger_</b></td></tr>
+<tr class="separator:a4542ae0834e6c5a77047565d06232fc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>
 Static Protected Attributes</h2></td></tr>
@@ -303,7 +315,7 @@ static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><b>kF
 </table>
 </div><div class="memdoc">
 
-<p>Start the parser. Must be called before <code>readData()</code>. </p>
+<p>Start the parser. Must be called before <code><a class="el" href="classLidarParserSTL.html#ac94ce2eca52632e00033595e9e8e181e" title="Read and parse one packet using the read byte callback.">readData()</a></code>. </p>
 <dl class="section return"><dt>Returns</dt><dd>true if the parser is ready to read data; false otherwise. </dd></dl>
 
 </div>
@@ -331,7 +343,7 @@ static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><b>kF
 </table>
 </div><div class="memdoc">
 
-<p>Stop the parser. After calling this, <code>readData()</code> will return false until <code><a class="el" href="classLidarParserSTL.html#a6561e5044bf604cb89448713abe0f026" title="Start the parser. Must be called before readData().">begin()</a></code> is called again. This can be used to temporarily disable parsing without losing the registered callback or configuration. </p>
+<p>Stop the parser. After calling this, <code><a class="el" href="classLidarParserSTL.html#ac94ce2eca52632e00033595e9e8e181e" title="Read and parse one packet using the read byte callback.">readData()</a></code> will return false until <code><a class="el" href="classLidarParserSTL.html#a6561e5044bf604cb89448713abe0f026" title="Start the parser. Must be called before readData().">begin()</a></code> is called again. This can be used to temporarily disable parsing without losing the registered callback or configuration. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
@@ -448,8 +460,37 @@ static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><b>kF
 
 </div>
 </div>
+<a id="ac94ce2eca52632e00033595e9e8e181e" name="ac94ce2eca52632e00033595e9e8e181e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac94ce2eca52632e00033595e9e8e181e">&#9670;&#160;</a></span>readData() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LidarParserSTL::readData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Read and parse one packet using the read byte callback. </p>
+<p>The method synchronizes on packet header bytes (<code>0x54</code>, <code>0x2C</code>), reads the full frame, validates CRC, converts angles to the requested unit, and emits points via the registered callback.</p>
+<dl class="section return"><dt>Returns</dt><dd>true if one valid packet was parsed; false otherwise. </dd></dl>
+
+</div>
+</div>
 <a id="abb2261ca9ee7a65a6304545f402afd33" name="abb2261ca9ee7a65a6304545f402afd33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb2261ca9ee7a65a6304545f402afd33">&#9670;&#160;</a></span>readData()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abb2261ca9ee7a65a6304545f402afd33">&#9670;&#160;</a></span>readData() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -546,6 +587,74 @@ static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><b>kF
 
 </div>
 </div>
+<a id="ad8a59e977acc4b0e546fa6f2fd1418f0" name="ad8a59e977acc4b0e546fa6f2fd1418f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8a59e977acc4b0e546fa6f2fd1418f0">&#9670;&#160;</a></span>setLogLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LidarParserSTL::setLogLevel </td>
+          <td>(</td>
+          <td class="paramtype">LidarLogLevel&#160;</td>
+          <td class="paramname"><em>level</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set parser logger level. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">level</td><td>Minimum level that will be emitted. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aca39f5070b19336630a33261b889f098" name="aca39f5070b19336630a33261b889f098"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca39f5070b19336630a33261b889f098">&#9670;&#160;</a></span>setLogOutput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LidarParserSTL::setLogOutput </td>
+          <td>(</td>
+          <td class="paramtype">Print &amp;&#160;</td>
+          <td class="paramname"><em>output</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set Arduino print sink for parser log messages. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">output</td><td>Print target. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="afa3d4fb34f421f8c3f87720c5040040c" name="afa3d4fb34f421f8c3f87720c5040040c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afa3d4fb34f421f8c3f87720c5040040c">&#9670;&#160;</a></span>setMaxRange()</h2>
 
@@ -578,33 +687,6 @@ static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><b>kF
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a0d70f972efbb48f8e2c2741e681a7ff5" name="a0d70f972efbb48f8e2c2741e681a7ff5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d70f972efbb48f8e2c2741e681a7ff5">&#9670;&#160;</a></span>setOutputWhenNoCallback()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void LidarParserSTL::setOutputWhenNoCallback </td>
-          <td>(</td>
-          <td class="paramtype">Print &amp;&#160;</td>
-          <td class="paramname"><em>output</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Defines the logging output device if no callback is used: by default Serail! </p>
 
 </div>
 </div>
@@ -642,7 +724,7 @@ static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><b>kF
 </table>
 </div><div class="memdoc">
 
-<p>Set a custom byte-read callback used by <code>readData()</code>. </p>
+<p>Set a custom byte-read callback used by <code><a class="el" href="classLidarParserSTL.html#ac94ce2eca52632e00033595e9e8e181e" title="Read and parse one packet using the read byte callback.">readData()</a></code>. </p>
 <p>This enables integrating non-Arduino transports by providing a function that returns one byte at a time.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
