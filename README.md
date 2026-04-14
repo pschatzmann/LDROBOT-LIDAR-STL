@@ -66,7 +66,7 @@ If you do not provide an PWM Motor Control set the value to GND
 ## Documentation
 
 - [Examples](examples/)
-- Class Documentation
+- [Class Documentation](https://pschatzmann.github.io/LDROBOT-LIDAR-STL/docs/html/classLidarParserSTL.html)
 
 
 ## Installation
