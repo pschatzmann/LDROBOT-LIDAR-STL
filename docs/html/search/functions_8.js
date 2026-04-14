@@ -1,12 +1,7 @@
 var searchData=
 [
-  ['setangleunit_0',['setAngleUnit',['../classLidarParserSTL.html#a8eb96b93fd0adc2df3b22a0c1f0977d4',1,'LidarParserSTL']]],
-  ['setdistanceunit_1',['setDistanceUnit',['../classLidarParserSTL.html#af2c5dc8c3ca9fb84b9bb503e4631232e',1,'LidarParserSTL']]],
-  ['setlevel_2',['setLevel',['../classLidarLoggerClass.html#a19dad3aae2c0e41bac3646f972027421',1,'LidarLoggerClass']]],
-  ['setloglevel_3',['setLogLevel',['../classLidarParserSTL.html#ad8a59e977acc4b0e546fa6f2fd1418f0',1,'LidarParserSTL']]],
-  ['setlogoutput_4',['setLogOutput',['../classLidarParserSTL.html#aca39f5070b19336630a33261b889f098',1,'LidarParserSTL']]],
-  ['setmaxrange_5',['setMaxRange',['../classLidarParserSTL.html#afa3d4fb34f421f8c3f87720c5040040c',1,'LidarParserSTL']]],
-  ['setoutput_6',['setOutput',['../classLidarLoggerClass.html#a1e3304776f520c2995e43b5859867c90',1,'LidarLoggerClass']]],
-  ['setreadbytecallback_7',['setReadByteCallback',['../classLidarParserSTL.html#aa0af1880a2a9f21ebacaee777a900397',1,'LidarParserSTL']]],
-  ['setresultcallback_8',['setResultCallback',['../classLidarParserSTL.html#a08654efc3eddc9f167d20fea6128bafa',1,'LidarParserSTL']]]
+  ['read_5fbyte_0',['read_byte',['../classLidarParserSTL.html#a874ff919a7cf8d2a29cdc29c8cc4df14',1,'LidarParserSTL']]],
+  ['read_5fbyte_5ffrom_5fstream_5fcb_1',['read_byte_from_stream_cb',['../classLidarParserSTL.html#a1f700cbd1b55f74e8283b0465218209b',1,'LidarParserSTL']]],
+  ['readdata_2',['readdata',['../classLidarParserSTL.html#abb2261ca9ee7a65a6304545f402afd33',1,'LidarParserSTL::readData(Stream &amp;input_stream)'],['../classLidarParserSTL.html#ac94ce2eca52632e00033595e9e8e181e',1,'LidarParserSTL::readData()']]],
+  ['readu16le_3',['readU16LE',['../classLidarParserSTL.html#afb16267844597c2b76b2e8c56a50e798',1,'LidarParserSTL']]]
 ];

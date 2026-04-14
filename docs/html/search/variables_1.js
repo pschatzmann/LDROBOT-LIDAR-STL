@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['intensity_0',['intensity',['../structLidarResultData.html#a0c7cbf6b786f943477d1d880f383436d',1,'LidarResultData']]],
-  ['is_5fobstacle_1',['is_obstacle',['../structLidarResultData.html#aea8af43b66df42c515eea0a0c94405cc',1,'LidarResultData']]]
+  ['distance_0',['distance',['../structLidarResultData.html#a0d319ed193b4a6e0f2f9c0b1aec3a444',1,'LidarResultData']]],
+  ['distance_5funit_1',['distance_unit',['../classLidarParserSTL.html#abea72af9ad193943f5db39a3a79403d6',1,'LidarParserSTL']]]
 ];

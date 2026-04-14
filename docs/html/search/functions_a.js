@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['warn_0',['warn',['../classLidarLoggerClass.html#aa1dd03104da7574e8c503ab279546fab',1,'LidarLoggerClass']]]
+  ['trace_0',['trace',['../classLidarLoggerClass.html#af077846fc2da1c72cb5a3490bd9e741f',1,'LidarLoggerClass']]]
 ];

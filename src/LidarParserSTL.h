@@ -10,21 +10,27 @@
 #include "Stream.h"
 #endif
 
-/// @brief Angle output unit for decoded LiDAR points.
+/**
+ * @enum LidarAngleUnit
+ * @brief Angle output unit for decoded LiDAR points.
+ */
 enum class LidarAngleUnit {
-  DEG = 0,                // 0..360 degree clockwise
-  RAD = 1,                // 0..2*PI radian clockwise
-  DEG_ROS = 2,            // +left, -right in degree (default)
-  RAD_ROS = 3,            // +left, -right in radian
-  RADIIAN_ROS = RAD_ROS,  // backward compatible typo alias
+  DEG = 0,                //!< 0..360 degree clockwise
+  RAD = 1,                //!< 0..2*PI radian clockwise
+  DEG_ROS = 2,            //!< +left, -right in degree (default)
+  RAD_ROS = 3,            //!< +left, -right in radian
+  RADIIAN_ROS = RAD_ROS,  //!< backward compatible typo alias
 };
 
-/// @brief Distance output unit for decoded LiDAR points.
+/**
+ * @enum LidarDistanceUnit
+ * @brief Distance output unit for decoded LiDAR points.
+ */
 enum class LidarDistanceUnit {
-  MM,  // distance in millimeters
-  CM,  // distance in centimeters
-  M,   // distance in meters (default)
-  IN,  // distance in inches
+  MM,  //!< distance in millimeters
+  CM,  //!< distance in centimeters
+  M,   //!< distance in meters (default)
+  IN,  //!< distance in inches
 };
 
 /**
@@ -34,12 +40,12 @@ enum class LidarDistanceUnit {
  * result callback.
  */
 struct LidarResultData {
-  float angle;        /// angle in the unit selected via `setAngleUnit()`
-  float distance;     /// distance in the unit selected via `setDistanceUnit()`
-  uint8_t intensity;  // intensity in range 0..255
-  uint64_t stamp;     /// packet timestamp
-  bool is_obstacle = true;  // true if the point is considered an obstacle based
-                            // on distance threshold
+  float angle;        //!< angle in the unit selected via `setAngleUnit()`
+  float distance;     //!< distance in the unit selected via `setDistanceUnit()`
+  uint8_t intensity;  //!< intensity in range 0..255
+  uint64_t stamp;     //!< packet timestamp
+  bool is_obstacle = true;  //!< true if the point is considered an obstacle based
+                            //!< on distance threshold */
 
   /**
    * @brief Construct a result point.
