@@ -4,6 +4,16 @@
  * The program opens a serial device on Linux, feeds incoming bytes to the
  * parser through a custom read callback, and prints decoded point data to
  * standard output.
+ *
+ * Build instructions (from repository root):
+ *   mkdir -p build
+ *   cd build
+ *   cmake ..
+ *   make 
+ *
+ * Run instructions:
+ *   ./linux-example               (defaults to /dev/ttyUSB0)
+ *   ./linux-example /dev/ttyACM0 (explicit device)
  */
 #include <LidarParserSTL.h>
 #include <errno.h>
