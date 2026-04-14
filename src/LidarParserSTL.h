@@ -285,12 +285,6 @@ class LidarParserSTL {
     return parsePacket(frame, kFrameLength);
   }
 
-#ifdef ARDUINO
-  /// Defines the logging output device if no callback is used: by default
-  /// Serail!
-  void setOutputWhenNoCallback(Print& output) { p_no_cb_output = &output; }
-#endif
-
  protected:
   static constexpr uint8_t kHeader = 0x54;
   static constexpr uint8_t kVerLen = 0x2C;
@@ -309,9 +303,6 @@ class LidarParserSTL {
   ReadByteCallback read_byte_func = nullptr;
   void* read_byte_ref = nullptr;
   LidarLoggerClass logger_;
-#ifdef ARDUINO
-  Print* p_no_cb_output = &Serial;
-#endif
 
   /// @brief Parse one full packet frame and emit points via callback.
   bool parsePacket(const uint8_t* packet, size_t len) {
@@ -388,15 +379,13 @@ class LidarParserSTL {
                             static_cast<uint64_t>(timestamp), is_obstacle),
             ref);
       } else {
-#ifdef ARDUINO
         // if no callback is registered, print the point data to Serial for
         // debugging
         char buffer[100];
         snprintf(buffer, sizeof(buffer),
                  "Angle: %.2f, Distance: %.2f, Intensity: %u, Timestamp: %u",
                  converted_angle, converted_distance, intensity, timestamp);
-        p_no_cb_output->println(buffer);
-#endif
+        logger_.info(buffer);
       }
       offset += 3;
     }
