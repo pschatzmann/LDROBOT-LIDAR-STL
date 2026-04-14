@@ -64,7 +64,7 @@ struct LidarResultData {
   /**
    * @brief Default constructor.
    */
-  LidarResultData() {}
+  LidarResultData() = default;
 };
 
 /**
